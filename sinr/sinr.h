@@ -46,7 +46,6 @@ const real fric = 0.1;    //Friction term in the Langevin thermostat
 const real Q1 = 1.0;      //Pseudo-Mass for the Nose-Hoover-like thermostat for the first coupling layer
 const real Q2 = 1.0;      //Pseudo-Mass for the Nose-Hoover-like thermostat for the second coupling layer
 const real sigma = sqrt(2.0 * fric / (beta * Q2));  //Sigma for the Ornstein-Uhlenbeck process
-const real 
 
 //-----------------Function for MD---------------------------------
 void addup(real dt);
