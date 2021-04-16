@@ -51,7 +51,7 @@ void MOVE_LF_V(Real dt);
 void MOVE_LF_R(Real dt);
 void INIT_SAMPLING_Wigner();
 void INIT_SAMPLING_Cl();
-void PropOneTrajVV();
+void PropOneTrajVV(int t);
 void PropOneTrajLF();
 
 //---------------- Variables ----------------
@@ -77,6 +77,10 @@ vector<Real> KE1;
 vector<Real> KE2;
 vector<Real> KE3;
 
+vector<int> position;
+vector<int> displacement;
+vector<int> velocity;
+
 Real DT;    //molecular dynamic time interval
 Real DT2;   //half of MD time interval
 Real beta;  //beta = 1/ k_BT, inverse temperature
@@ -86,7 +90,8 @@ const Real hbar = 1;
 const Real pi = std::acos(-1.0);//3.14159265358979;
 const Complex I(0.0,1.0);  //the imaginary I
 int DOFn = 1;          // How many nuclear Degree of Freedom(DOFn) are talking about
-int nsteps = 1;        // Total MD propagation Steps
+int nsteps = 10000;        // Total MD propagation Steps
+int sampling = 1000;
 vector<Real> Req;      // Equilibrated coordinates
 vector<Real> Omega;    // Force field frequency
 
