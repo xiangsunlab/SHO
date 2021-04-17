@@ -96,7 +96,7 @@ const Real hbar = 1;
 const Real pi = std::acos(-1.0);//3.14159265358979;
 const Complex I(0.0,1.0);  //the imaginary I
 int DOFn = 1;          // How many nuclear Degree of Freedom(DOFn) are talking about
-int nsteps = 100000;        // Total MD propagation Steps
+int nsteps = 1000000;        // Total MD propagation Steps
 int sampling = 1;
 vector<Real> Req;      // Equilibrated coordinates
 vector<Real> Omega;    // Force field frequency
