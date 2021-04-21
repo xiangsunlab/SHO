@@ -102,9 +102,15 @@ vector<Real> v2;    // SIN-R 2nd thermostat momenta
 vector<Real> Q2;    // SIN-R 2nd thermostat masses
 vector<Real> ovQ2;  // 1/Q2
 
+<<<<<<< HEAD
 long int position[10000];
 long int displacement[10000];
 long int velocity[10000];
+=======
+vector<int> position;
+vector<int> displacement;
+vector<int> velocity;
+>>>>>>> origin/main
 
 
 Real DT;    //molecular dynamic time interval
@@ -115,10 +121,17 @@ Real temp;  //Temperature T
 const Real hbar = 1;
 const Real pi = std::acos(-1.0);//3.14159265358979;
 const Complex I(0.0,1.0);  //the imaginary I
+<<<<<<< HEAD
 int DOFn = 2;          // How many nuclear Degree of Freedom(DOFn) are talking about
 int nsteppr = 100000;       // MD prep MD steps 
 int nsteps = 10000;        // Propagation MD propagation Steps
 int sampling = 100;
+=======
+int DOFn = 1;          // How many nuclear Degree of Freedom(DOFn) are talking about
+int nsteppr = 1;       // MD prep MD steps 
+int nsteps = 1;        // Propagation MD propagation Steps
+int sampling = 1;
+>>>>>>> origin/main
 int nres = 5;          // RESPA loop number
 int nsy = 3;           // Forth order Suzuki-Yolanda factorisation
 int NHL = 4;
